@@ -31,7 +31,7 @@ spec:
             - name: PROTOCOLS
             - name: LOG_LEVEL
               value: debug
-          image: quay.io/cgchoi/express-sample-app
+          image: quay.io/cgchoi/tekton
           imagePullPolicy: IfNotPresent
           livenessProbe:
             failureThreshold: 3
