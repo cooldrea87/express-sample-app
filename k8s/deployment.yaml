@@ -2,8 +2,8 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   annotations:
-    app.openshift.io/vcs-ref: f7580aa1eb6f7176705176e201ecff4de93edafb
-    app.openshift.io/vcs-uri: https://github.com/upslopeio/express-sample-app
+    app.openshift.io/vcs-ref: main
+    app.openshift.io/vcs-uri: https://github.com/cooldrea87/express-sample-app
   labels:
     app: chunggeun-choi-pipeline-from-scratch
     app.kubernetes.io/instance: chunggeun-choi-pipeline-from-scratch
@@ -31,7 +31,7 @@ spec:
             - name: PROTOCOLS
             - name: LOG_LEVEL
               value: debug
-          image: quay.io/andreask/express-sample-app
+          image: quay.io/cgchoi/express-sample-app
           imagePullPolicy: IfNotPresent
           livenessProbe:
             failureThreshold: 3
